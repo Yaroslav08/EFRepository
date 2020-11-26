@@ -12,6 +12,7 @@ namespace EFRepository.Interfaces
         Task<TEntity> CreateAsync(TEntity entity);
         Task CreateRangeAsync(List<TEntity> entities);
         Task<TEntity> UpdateAsync(TEntity entity);
+        Task UpdateRangeAsync(List<TEntity> entities);
         Task<TEntity> RemoveAsync(TEntity entity);
         Task<TEntity> GetByIdAsTrackingAysnc(TypeId Id);
         Task<List<TEntity>> GetAllAsync();
