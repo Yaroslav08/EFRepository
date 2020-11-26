@@ -6,6 +6,7 @@
     <Version>1.0.0</Version>
     <Authors>Yaroslav08</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>Yaroslav08.EFRepository</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
