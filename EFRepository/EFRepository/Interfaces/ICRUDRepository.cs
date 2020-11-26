@@ -22,5 +22,6 @@ namespace EFRepository.Interfaces
         Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match);
         Task<TEntity> FindAsTrackingAsync(Expression<Func<TEntity, bool>> match);
         Task<List<TEntity>> FindListAsync(Expression<Func<TEntity, bool>> match);
+        Task<List<TEntity>> FindListAsTrackingAsync(Expression<Func<TEntity, bool>> match);
     }
 }
