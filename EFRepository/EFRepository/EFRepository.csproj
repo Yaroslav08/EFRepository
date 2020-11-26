@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Yaroslav08</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageId>Yaroslav08.EFRepository</PackageId>
-    <PackageReleaseNotes>Added methods for add and update range entities</PackageReleaseNotes>
+    <PackageReleaseNotes>Added methods for remove range entities</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
