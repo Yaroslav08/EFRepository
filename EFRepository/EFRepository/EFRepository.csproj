@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Yaroslav08</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageId>Yaroslav08.EFRepository</PackageId>
-    <PackageReleaseNotes>Remove inheritance from DbContext</PackageReleaseNotes>
+    <PackageReleaseNotes>Added methods for add and update range entities</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
