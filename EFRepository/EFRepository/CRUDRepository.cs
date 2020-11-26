@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace EFRepository
 {
-    public class CRUDRepository<TEntity, TypeId, BaseDbContext> : DbContext, ICRUDRepository<TEntity, TypeId> where BaseDbContext : DbContext where TEntity : class
+    public class CRUDRepository<TEntity, TypeId, BaseDbContext> : ICRUDRepository<TEntity, TypeId> where BaseDbContext : DbContext where TEntity : class
     {
         protected BaseDbContext db;
         protected DbSet<TEntity> dbSet;
