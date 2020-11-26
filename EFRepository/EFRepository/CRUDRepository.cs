@@ -89,6 +89,12 @@ namespace EFRepository
             return entity;
         }
 
+        public async Task RemoveRangeAsync(List<TEntity> entities)
+        {
+            db.Set<TEntity>().RemoveRange(entities);
+            await db.SaveChangesAsync();
+        }
+
         public async Task<TEntity> UpdateAsync(TEntity entity)
         {
             db.Set<TEntity>().Update(entity);
