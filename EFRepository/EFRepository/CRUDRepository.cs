@@ -36,6 +36,12 @@ namespace EFRepository
             return entity;
         }
 
+        public async Task CreateRangeAsync(List<TEntity> entities)
+        {
+            await db.Set<TEntity>().AddRangeAsync(entities);
+            await db.SaveChangesAsync();
+        }
+
         public async Task<TEntity> FindAsTrackingAsync(Expression<Func<TEntity, bool>> match)
         {
             return await db.Set<TEntity>().FirstOrDefaultAsync(match);

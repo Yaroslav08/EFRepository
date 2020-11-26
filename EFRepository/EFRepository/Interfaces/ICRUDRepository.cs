@@ -10,6 +10,7 @@ namespace EFRepository.Interfaces
     public interface ICRUDRepository<TEntity, TypeId> where TEntity : class
     {
         Task<TEntity> CreateAsync(TEntity entity);
+        Task CreateRangeAsync(List<TEntity> entities);
         Task<TEntity> UpdateAsync(TEntity entity);
         Task<TEntity> RemoveAsync(TEntity entity);
         Task<TEntity> GetByIdAsTrackingAysnc(TypeId Id);
