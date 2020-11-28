@@ -20,7 +20,9 @@ namespace EFRepository.Interfaces
         Task<TEntity> FirstAsync();
         Task<TEntity> LastAsync();
         Task<int> CountAsync();
+        Task<int> CountAsync(Expression<Func<TEntity, bool>> match);
         Task<long> CountLongAsync();
+        Task<long> CountLongAsync(Expression<Func<TEntity, bool>> match);
         Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match);
         Task<TEntity> FindAsTrackingAsync(Expression<Func<TEntity, bool>> match);
         Task<List<TEntity>> FindListAsync(Expression<Func<TEntity, bool>> match);

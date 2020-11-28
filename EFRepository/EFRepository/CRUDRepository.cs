@@ -24,9 +24,19 @@ namespace EFRepository
             return await db.Set<TEntity>().CountAsync();
         }
 
+        public async Task<int> CountAsync(Expression<Func<TEntity, bool>> match)
+        {
+            return await db.Set<TEntity>().CountAsync(match);
+        }
+
         public async Task<long> CountLongAsync()
         {
             return await db.Set<TEntity>().LongCountAsync();
+        }
+
+        public async Task<long> CountLongAsync(Expression<Func<TEntity, bool>> match)
+        {
+            return await db.Set<TEntity>().LongCountAsync(match);
         }
 
         public async Task<TEntity> CreateAsync(TEntity entity)
