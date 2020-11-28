@@ -1,13 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <Authors>Yaroslav08</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageId>Yaroslav08.EFRepository</PackageId>
-    <PackageReleaseNotes>Added methods for get count with match expressions</PackageReleaseNotes>
+    <PackageReleaseNotes>Added methods for check is exist entity</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
