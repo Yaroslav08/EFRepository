@@ -21,22 +21,22 @@ namespace EFRepository
 
         public async Task<int> CountAsync()
         {
-            return await db.Set<TEntity>().CountAsync();
+            return await db.Set<TEntity>().AsNoTracking().CountAsync();
         }
 
         public async Task<int> CountAsync(Expression<Func<TEntity, bool>> match)
         {
-            return await db.Set<TEntity>().CountAsync(match);
+            return await db.Set<TEntity>().AsNoTracking().CountAsync(match);
         }
 
         public async Task<long> CountLongAsync()
         {
-            return await db.Set<TEntity>().LongCountAsync();
+            return await db.Set<TEntity>().AsNoTracking().LongCountAsync();
         }
 
         public async Task<long> CountLongAsync(Expression<Func<TEntity, bool>> match)
         {
-            return await db.Set<TEntity>().LongCountAsync(match);
+            return await db.Set<TEntity>().AsNoTracking().LongCountAsync(match);
         }
 
         public async Task<TEntity> CreateAsync(TEntity entity)
@@ -85,6 +85,11 @@ namespace EFRepository
         public async Task<TEntity> GetByIdAsTrackingAysnc(TypeId Id)
         {
             return await db.Set<TEntity>().FindAsync(Id);
+        }
+
+        public async Task<bool> IsExistAsync(Expression<Func<TEntity, bool>> match)
+        {
+            return await db.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync(match) != null ? true : false;
         }
 
         public async Task<TEntity> LastAsync()
