@@ -44,7 +44,7 @@ var users = await personRepository.GetAllAsync(); //now this method available
 ## Define
 Interface have next methods (1.0.3):
 ```csharp
-    public interface ICRUDRepository<TEntity, TypeId> where TEntity : class
+        public interface ICRUDRepository<TEntity, TypeId> where TEntity : class
     {
         Task<TEntity> CreateAsync(TEntity entity);
         Task CreateRangeAsync(List<TEntity> entities);
@@ -57,7 +57,10 @@ Interface have next methods (1.0.3):
         Task<TEntity> FirstAsync();
         Task<TEntity> LastAsync();
         Task<int> CountAsync();
+        Task<int> CountAsync(Expression<Func<TEntity, bool>> match);
         Task<long> CountLongAsync();
+        Task<long> CountLongAsync(Expression<Func<TEntity, bool>> match);
+        Task<bool> IsExistAsync(Expression<Func<TEntity, bool>> match);
         Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match);
         Task<TEntity> FindAsTrackingAsync(Expression<Func<TEntity, bool>> match);
         Task<List<TEntity>> FindListAsync(Expression<Func<TEntity, bool>> match);
