@@ -42,7 +42,7 @@ var users = await personRepository.GetAllAsync(); //now this method available
 
 
 ## Define
-Interface have next methods (1.0.3):
+Interface have next methods (1.0.5):
 ```csharp
     public interface ICRUDRepository<TEntity, TypeId> where TEntity : class
     {
