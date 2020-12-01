@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.5</Version>
+    <Version>1.0.6</Version>
     <Authors>Yaroslav08</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageId>Yaroslav08.EFRepository</PackageId>
-    <PackageReleaseNotes>Added methods for check is exist entity</PackageReleaseNotes>
+    <PackageReleaseNotes>Added method for get list with offset params</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
