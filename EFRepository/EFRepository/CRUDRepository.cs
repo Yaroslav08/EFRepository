@@ -72,6 +72,11 @@ namespace EFRepository
             return await db.Set<TEntity>().AsNoTracking().Where(match).ToListAsync();
         }
 
+        public async Task<List<TEntity>> FindListAsync(Expression<Func<TEntity, bool>> match, int count, int skip)
+        {
+            return await db.Set<TEntity>().AsNoTracking().Where(match).Skip(skip).Take(count).ToListAsync();
+        }
+
         public async Task<TEntity> FirstAsync()
         {
             return await db.Set<TEntity>().AsNoTracking().FirstOrDefaultAsync();
