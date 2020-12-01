@@ -87,7 +87,7 @@ namespace EFRepository
             return await db.Set<TEntity>().AsNoTracking().ToListAsync();
         }
 
-        public async Task<TEntity> GetByIdAsTrackingAysnc(TypeId Id)
+        public async Task<TEntity> GetByIdAsTrackingAsync(TypeId Id)
         {
             return await db.Set<TEntity>().FindAsync(Id);
         }

@@ -15,7 +15,7 @@ namespace EFRepository.Interfaces
         Task UpdateRangeAsync(List<TEntity> entities);
         Task<TEntity> RemoveAsync(TEntity entity);
         Task RemoveRangeAsync(List<TEntity> entities);
-        Task<TEntity> GetByIdAsTrackingAysnc(TypeId Id);
+        Task<TEntity> GetByIdAsTrackingAsync(TypeId Id);
         Task<List<TEntity>> GetAllAsync();
         Task<TEntity> FirstAsync();
         Task<TEntity> LastAsync();
