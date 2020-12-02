@@ -1,3 +1,4 @@
+[![NuGet](https://img.shields.io/nuget/v/Yaroslav08.EFRepository.svg)](https://www.nuget.org/packages/Yaroslav08.EFRepository)
 # Entity Framework Repository (library)
 
 The main task of this libraries its easy provide for access to your data
